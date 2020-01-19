@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+
+<body>
+    <button>Показать окно</button>
+    <div class="wrap hidden">
+        <img src="img/boom.jpg" alt="boom" width="550" height="400">
+    </div>
+    <script>
+        'use strict';
+
+        let showBtn = document.querySelector('button');
+        let modal = document.querySelector('.wrap');
+
+        showBtn.addEventListener('click', function() {
+            modal.classList.remove('hidden');
+        });
+        modal.classList.add('animated', 'hinge')
+
+    </script>
+
+</body>
+
+</html>
